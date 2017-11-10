@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JS Calc Index</title>
+        <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+        <link rel="stylesheet" href="css/index.css" type="text/css" />
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" type="text/css" />
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    </head>
+
+    <body >
+      <div class ='container-fluid'>
+    
+        <nav class = 'navbar navbar-inverse nav-justified' style="width:auto;">
+          <div class = 'navbar-header'>
+            <a class = 'navbar-brand' href = '#'> JS Calculator </a>
+          </div>
+      
+          <ul class = 'nav navbar-nav navbar-right'>
+            <li>
+              <a href = 'https://codepen.io/bandymedic'>
+                  <span class = 'active glyphicon glyphicon-sunglasses'>  </span>  Bandymedic
+              </a>
+            </li>
+          </ul>
+        </nav>
+    
+    
+    <div class = 'calc'>
+      <form>
+        <div class = 'spacer2'></div>
+        <input type = 'text' id = 'screen' disabled>
+        <br>
+        <div class = 'spacer2'></div>
+        <input type = 'button' value = 'C' id = 'keys-red' onclick = 'toScreen("c")'>
+        <input type = 'button' value = 'CE' id = 'keys-red' onclick = 'backspace()'>
+        <input type = 'button' value = 'x^2' id = 'keys-purp' onclick = 'powers()'>
+        <input type = 'button' value = '+' id = 'keys' onclick = 'toScreen("+")'>
+        <br>
+        <div class = 'spacer2'></div>
+        <input type = 'button' value = '7' id = 'keys' onclick = 'toScreen("7")'>
+        <input type = 'button' value = '8' id = 'keys' onclick = 'toScreen("8")'>
+        <input type = 'button' value = '9' id = 'keys' onclick = 'toScreen("9")'>
+        <input type = 'button' value = '-' id = 'keys' onclick = 'toScreen("-")'>
+        <br>
+        <div class = 'spacer2'></div>
+        <input type = 'button' value = '4' id = 'keys' onclick = 'toScreen("4")'>
+        <input type = 'button' value = '5' id = 'keys' onclick = 'toScreen("5")'>
+        <input type = 'button' value = '6' id = 'keys' onclick = 'toScreen("6")'>
+        <input type = 'button' value = '*' id = 'keys' onclick = 'toScreen("*")'>
+        <br>
+        <div class = 'spacer2'></div>
+        <input type = 'button' value = '1' id = 'keys' onclick = 'toScreen("1")'>
+        <input type = 'button' value = '2' id = 'keys' onclick = 'toScreen("2")'>
+        <input type = 'button' value = '3' id = 'keys' onclick = 'toScreen("3")'>
+        <input type = 'button' value = '/' id = 'keys' onclick = 'toScreen("/")'>
+        <br>
+        <div class = 'spacer2'></div>
+        <input type = 'button' value = '0' id = 'keys' onclick = 'toScreen("0")'>
+        <input type = 'button' value = '.' id = 'keys' onclick = 'toScreen(".")'>
+        <input type = 'button' value = '=' id = 'equals' onclick = 'answer()'>
+        <div class = 'spacer2'></div>
+    </div>
+    
+    <div class = 'spacer'></div>
+ </div>
+  <script type="text/javascript" src="js/index.js"></script> 
+</body>
+</html>
